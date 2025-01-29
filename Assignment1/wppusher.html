@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WP Pusher Checkout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+            
+
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .account-btn {
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            background-color: white;
+            cursor: pointer;
+        }
+        .checkout-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .checkout-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin-right: 20px;
+        }
+        .checkout-box h2 {
+            margin-bottom: 20px;
+        }
+        .basic-info, .payment-info {
+            margin-bottom: 20px;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .card-details {
+            display: flex;
+            gap: 10px;
+        }
+        .buy-btn {
+            background: #007b5e;
+            color: white;
+            padding: 15px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .help {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .pricing-box {
+            background: #007bff;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            width: 250px;
+            height: 655px;
+        }
+        .pricing-box h3 {
+            font-size: 24px;
+        }
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .price span {
+            font-size: 16px;
+        }
+        .switch-plan a {
+            color: white;
+            text-decoration: underline;
+        }
+        blockquote {
+            margin-top: 20px;
+            font-style: italic;
+            border-left: 4px solid white;
+            padding-left: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">WP Pusher</div>
+        <nav>
+            <ul>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Learn more</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+        <button class="account-btn">Account</button>
+    </header>
+    
+    <main class="checkout-container">
+        <div class="checkout-box">
+            <h2>Checkout</h2>
+            <br>
+            
+            <section class="basic-info">
+                <h3><span>1</span> Your Basic Information</h3>
+                <div class="input-group">
+                    <input type="text" placeholder="First Name" value="Jane">
+                    <input type="text" placeholder="Last Name" value="Doe">
+                </div>
+                <input type="email" placeholder="E-mail" value="janedoe@example.com" disabled>
+            </section>
+            <br>
+            
+            <section class="payment-info">
+                <h3><span>2</span> Your Payment Information</h3>
+                <p>Credit Card</p>
+                <input type="text" placeholder="Card Number">
+                <div class="card-details">
+                    <input type="text" placeholder="MM / YY">
+                    <input type="text" placeholder="CVC">
+                </div>
+            </section>
+            <br> <br> <br>
+            
+            <button class="buy-btn">Buy WP Pusher</button>
+            <br> <br>
+            
+            <p class="help">Need any help? <a href="#">Contact</a> support!</p>
+        </div>
+        
+        <aside class="pricing-box">
+            <h3>Freelancer</h3>
+            <p class="price">$99 <span>/ year</span></p>
+            <p>Automatically renews after 1 year</p>
+            <ul>
+                <li>✔ Use on 5 client sites</li>
+                <li>✔ Private repositories</li>
+                <li>✔ Email support</li>
+            </ul>
+            <p class="switch-plan">Need 20 client sites? <br> <br> <a href="#">Switch to the Agency plan</a>.</p>
+                <br>
+                <p><em>FTP is horrible to deal with. <br> <strong>WP Pusher</strong> solves that issue, <br> and the customer support is awesome!</em></p>
+                <p class="author">Kirk Beard</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2018 WP Pusher IVS &middot; <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>

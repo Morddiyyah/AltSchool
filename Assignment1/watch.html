@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            height: 750px;
+            width: 1000px;
+            background-color: rgb(167,168,205);
+            border: 10px solid rgba(255, 255, 255, 0.651);
+        }
+        .cont{
+            display: inline-block;
+            width: fit-content;
+            height: fit-content;
+            margin-left: 150px;
+            margin-top: 80px;
+            /* margin: auto; */
+            border-radius: 10px;
+        }
+        .b_cont{
+            height: 400px;
+            width: 700px;
+            background-color: black;
+            position: relative;
+            background-image: url(watch.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .side_cont{
+            width: 150px;
+            height: 25px;
+            position: absolute;
+            background-color: rgb(253,241,181);
+            top: 10px;
+            left: -10px;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .side_cont p{
+            margin-top: 1px;
+            margin-left: 10px;
+            /* font-weight: 20px; */
+        }
+        .s_cont{
+            height: 175px;
+            width: 700px;
+            background-color: white;
+        }
+        .s_cont p{
+            margin-left: 40px;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.733)
+            
+        
+        }
+        .sbs{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-left: 40px;
+            /* background-color: blue; */
+            height: 45px;
+            width: fit-content;
+        }
+        .s_cont h3{
+            color: rgba(0, 0, 0, 0.281)
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="cont">
+            <div class="b_cont">
+                <div class="side_cont">
+                    <p>New and Improved!</p>
+                </div>
+            </div>
+            <div class="s_cont">
+                <div class="sbs"><h1>Novus watch</h1><h3>Series IV</h3></div>
+                <p>The pinnacle of fashion and tech. This wearable <br> piece is an homage to gilded palaces and minimal <br> regalia. Combining nouveau-deco and brutalism <br> influences in a compact. Swiss-made watch.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
